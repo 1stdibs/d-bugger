@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    if dbug
+        //-
+            Call `print` on the dbug object to output
+            debug info to the browser.
+
+            You can configure the name of this variable in the debugger
+            setup method, e.g.:
+            debugger.setup({ localsVar: 'myVarName' }) -> myVarName.print()
+        !=dbug.print({ development: true })

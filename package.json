@@ -1,0 +1,26 @@
+{
+  "name": "d-bugger",
+  "version": "0.0.1",
+  "description": "A simple debugging utility for Express apps. Requires React, babel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --require babelhook --ui bdd test",
+    "css": "./node_modules/.bin/minify --output ./lib/ui/default.css ./src/dbugger.css",
+    "example": "NODE_ENV=development node ./example/app.js"
+  },
+  "author": "Tim Whidden",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "classnames": "~2.1.3",
+    "lodash": "^3.10.1",
+    "react": "~0.13.3"
+  },
+  "devDependencies": {
+    "cheerio": "^0.19.0",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "minifier": "^0.7.1",
+    "mocha": "^2.2.5"
+  }
+}

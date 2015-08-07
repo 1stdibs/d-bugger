@@ -1,0 +1,94 @@
+#Dbug {
+    width: 100%;
+    background-color: #01002B;
+    color: white;
+    font-family: monospace;
+    border-top: 3px solid #010019;
+    border-left: 3px solid #010019;
+}
+
+#Dbug h1.d-bugger-title {
+    font-family: monospace;
+    margin: 8px;
+    font-weight: normal;
+}
+
+#Dbug pre {
+    font-size: 11px !important;
+    color: whitesmoke;
+    border: 0 none;
+    background-color: transparent;
+}
+
+.d-bugger-error-stack {
+    display: block;
+    min-height: 300px;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 0 none;
+    cursor: text;
+}
+
+.d-bugger-table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #f5f5ff;
+    margin-bottom: 0;
+}
+
+.d-bugger-table td, .d-bugger-table th {
+    padding: 4px 8px;
+}
+
+.d-bugger-table th {
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.d-bugger-error-row {
+    padding-top: 8px;
+    background-color: #500000;
+    border-bottom: 4px solid #440000;
+}
+
+.d-bugger-error-row th {
+    padding: 8px auto;
+    border-top: 1px solid black;
+    background-color: #350000;
+}
+
+.d-bugger-success-row {
+    padding-top: 8px;
+    background-color: #004250;
+    border-bottom: 4px solid #002c3a;
+}
+
+.d-bugger-success-row th {
+    padding: 8px auto;
+    border-top: 1px solid black;
+    background-color: #002733;
+}
+
+.d-bugger-generic-row th {
+    background-color: #010019;
+}
+
+td.d-bugger-title {
+    font-weight: bold;
+}
+
+.d-bugger-generic-key {
+    text-align: right;
+    width: 10%;
+}
+
+.d-bugger-generic-value {
+    font-size: 1.2em;
+}
+
+.d-bugger-error-url, .d-bugger-success-url {
+    color: white;
+    text-decoration: underline;
+}
