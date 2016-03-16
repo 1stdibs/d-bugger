@@ -1,6 +1,6 @@
 {
   "name": "d-bugger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple debugging utility for Express apps. Requires React, babel.",
   "main": "index.js",
   "scripts": {
