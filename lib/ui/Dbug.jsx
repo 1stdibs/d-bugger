@@ -22,13 +22,13 @@ class Dbug extends React.Component {
 
     render() {
         const classes = classNames({ 'col-md-12': this.props.bootstrap });
-        const debug = this.props.debug;
+        const dbug = this.props.dbug;
 
-        if (_.isObject(debug)) {
+        if (_.isObject(dbug)) {
             return (
                 <div id='Dbug' className={classes}>
                     <h1 className='d-bugger-title'>Server-side Debug Info</h1>
-                    { _.map(debug, this.renderItems) }
+                    { _.map(dbug, this.renderItems) }
                 </div>
             );
         }

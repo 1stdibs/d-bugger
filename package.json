@@ -4,8 +4,8 @@
   "description": "A simple debugging utility for Express apps. Requires React, babel.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --require babelhook --ui bdd test",
-    "css": "./node_modules/.bin/minify --output ./lib/ui/default.css ./src/dbugger.css",
+    "test": "mocha --require babelhook --ui bdd test",
+    "css": "minify --output ./lib/ui/default.css ./src/dbugger.css",
     "example": "NODE_ENV=development node ./example/app.js"
   },
   "author": "Tim Whidden",

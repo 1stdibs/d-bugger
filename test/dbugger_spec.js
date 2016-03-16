@@ -1,4 +1,3 @@
-/*!  */
 /**
  * Created by timwhidden
  * Date: 8/7/15
@@ -16,7 +15,7 @@ const errMsg = require('./sampleReports').errMsg;
 
 const noop = () => {};
 
-describe('Dee. Bug. Eer.', function () {
+describe('Dee. Bug. Er.', function () {
     let res;
     let middleware;
 
@@ -112,7 +111,8 @@ describe('Dee. Bug. Eer.', function () {
         it('turns off default styles', () => {
             let localRes = { locals: {} };
 
-            dbugger.setup({ useDefaultCss: false })({}, localRes, noop); // create middleware function and immediately invoke it
+            // create middleware function and immediately invoke it
+            dbugger.setup({ useDefaultCss: false })({}, localRes, noop);
             localRes.dbugger(reports.requestSuccess);
 
             let out = localRes.locals.dbug.print();
@@ -124,7 +124,7 @@ describe('Dee. Bug. Eer.', function () {
         it('outputs bootstrap classes', () => {
             let localRes = { locals: {} };
 
-            dbugger.setup({ bootstrap: true })({}, localRes, noop); // create middleware function and immediately invoke it
+            dbugger.setup({ bootstrap: true })({}, localRes, noop);
 
             // add all debug reports
             Object.keys(reports).forEach((key) => {
@@ -141,16 +141,15 @@ describe('Dee. Bug. Eer.', function () {
         it('can modify locals var name', () => {
             let localRes = { locals: {} };
 
-            dbugger.setup({ localsVar: 'foo' })({}, localRes, noop); // create middleware function and immediately invoke it
-            assert(localRes.locals.foo.print);
+            dbugger.setup({ localsVar: 'foo' })({}, localRes, noop);
+            assert(typeof localRes.locals.foo.print === 'function');
         });
 
         it('can modify response method name', () => {
             let localRes = { locals: {} };
 
-            dbugger.setup({ resMethod: 'foo' })({}, localRes, noop); // create middleware function and immediately invoke it
+            dbugger.setup({ resMethod: 'foo' })({}, localRes, noop);
             assert(typeof localRes.foo === 'function');
-            assert(typeof localRes.foo.dump === 'function');
         });
     });
 });
